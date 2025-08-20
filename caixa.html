@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caixa - Movebuss</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header>
+    <h2>Abertura de Caixa</h2>
+  </header>
+  <main>
+    <button id="abrirCaixaBtn">Abrir Caixa</button>
+    <section id="abastecimentoSection" class="hidden">
+      <h3>Novo Abastecimento</h3>
+      <form id="abastecimentoForm">
+        <label>Tipo Validador</label>
+        <select id="tipoValidador" required>
+          <option value="PRODATA">PRODATA</option>
+          <option value="DIGICON">DIGICON</option>
+        </select>
+        <label>Quantidade Bordos</label>
+        <input type="number" id="qtdBordos" min="1" required>
+        <label>Valor (R$)</label>
+        <input type="text" id="valor" readonly>
+        <label>Prefixo</label>
+        <input type="text" id="prefixo" maxlength="3" required>
+        <label>Matrícula Motorista</label>
+        <input type="text" id="matMotorista" required>
+        <button type="submit">Salvar</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

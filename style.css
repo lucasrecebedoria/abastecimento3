@@ -1,1 +1,24 @@
-<!-- Placeholder for style.css, incluir código do site aqui -->
+body {
+  background: linear-gradient(135deg, #000, #333);
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+button {
+  background: green;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+button:hover {
+  transform: scale(1.1);
+}
+.auth-container {
+  max-width: 300px;
+  margin: auto;
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+}
+.hidden { display: none; }
